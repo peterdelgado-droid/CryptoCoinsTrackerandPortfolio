@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		82C1A88A289928AB00ADF58A /* SwiftCryptoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A889289928AB00ADF58A /* SwiftCryptoTrackerApp.swift */; };
 		82C1A88C289928AB00ADF58A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A88B289928AB00ADF58A /* ContentView.swift */; };
-		82C1A88E289928AC00ADF58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A88D289928AC00ADF58A /* Assets.xcassets */; };
 		82C1A891289928AC00ADF58A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A890289928AC00ADF58A /* Preview Assets.xcassets */; };
 		82C1A8D828992E0D00ADF58A /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A8D728992E0D00ADF58A /* Contents.json */; };
-		82C1A8DC28992EAE00ADF58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A8DB28992EAE00ADF58A /* Assets.xcassets */; };
+		82C1A8DE289930B000ADF58A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C1A8DD289930B000ADF58A /* Assets.xcassets */; };
+		82C1A8E22899310E00ADF58A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A8E12899310E00ADF58A /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82C1A886289928AB00ADF58A /* SwiftCryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C1A889289928AB00ADF58A /* SwiftCryptoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCryptoTrackerApp.swift; sourceTree = "<group>"; };
 		82C1A88B289928AB00ADF58A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		82C1A88D289928AC00ADF58A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82C1A890289928AC00ADF58A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82C1A8D728992E0D00ADF58A /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
-		82C1A8DB28992EAE00ADF58A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82C1A8DD289930B000ADF58A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82C1A8E12899310E00ADF58A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +55,11 @@
 		82C1A888289928AB00ADF58A /* SwiftCryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				82C1A8E0289930E400ADF58A /* Extensions */,
 				82C1A889289928AB00ADF58A /* SwiftCryptoTrackerApp.swift */,
 				82C1A88B289928AB00ADF58A /* ContentView.swift */,
-				82C1A88D289928AC00ADF58A /* Assets.xcassets */,
-				82C1A8DB28992EAE00ADF58A /* Assets.xcassets */,
 				82C1A8D728992E0D00ADF58A /* Contents.json */,
-				82C1A8B728992D5B00ADF58A /* Assets */,
+				82C1A8DD289930B000ADF58A /* Assets.xcassets */,
 				82C1A88F289928AC00ADF58A /* Preview Content */,
 			);
 			path = SwiftCryptoTracker;
@@ -74,19 +73,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		82C1A8B728992D5B00ADF58A /* Assets */ = {
+		82C1A8E0289930E400ADF58A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				82C1A8B828992D5B00ADF58A /* AppIcon.appiconset */,
+				82C1A8E12899310E00ADF58A /* Color.swift */,
 			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		82C1A8B828992D5B00ADF58A /* AppIcon.appiconset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppIcon.appiconset;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82C1A891289928AC00ADF58A /* Preview Assets.xcassets in Resources */,
-				82C1A88E289928AC00ADF58A /* Assets.xcassets in Resources */,
-				82C1A8DC28992EAE00ADF58A /* Assets.xcassets in Resources */,
+				82C1A8DE289930B000ADF58A /* Assets.xcassets in Resources */,
 				82C1A8D828992E0D00ADF58A /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +154,7 @@
 			files = (
 				82C1A88C289928AB00ADF58A /* ContentView.swift in Sources */,
 				82C1A88A289928AB00ADF58A /* SwiftCryptoTrackerApp.swift in Sources */,
+				82C1A8E22899310E00ADF58A /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
