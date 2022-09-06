@@ -21,7 +21,7 @@ struct HomeView: View {
 
 			VStack{
 				homeHeader
-
+				HomeStatsView(showPortofolio: $showPortfolio)
 				SearchBarView(searchText: $vm.searchText)
 				columnTitles
 
@@ -88,6 +88,7 @@ extension HomeView {
 				}
 		}
 		.padding(.horizontal)
+
 
 
 

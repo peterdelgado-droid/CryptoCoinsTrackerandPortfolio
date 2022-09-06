@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		823408D828C7576B00CDE497 /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823408D728C7576B00CDE497 /* StatisticView.swift */; };
+		823408DA28C7607D00CDE497 /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823408D928C7607D00CDE497 /* HomeStatsView.swift */; };
+		823408DC28C770ED00CDE497 /* MarketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823408DB28C770ED00CDE497 /* MarketDataService.swift */; };
 		8267307228993C2700400FAA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267307128993C2700400FAA /* HomeView.swift */; };
 		8267307628993DB000400FAA /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267307528993DB000400FAA /* CircleButtonView.swift */; };
 		827635B9289A7944009D1B77 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827635B8289A7943009D1B77 /* NetworkManager.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		823408D728C7576B00CDE497 /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		823408D928C7607D00CDE497 /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
+		823408DB28C770ED00CDE497 /* MarketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataService.swift; sourceTree = "<group>"; };
 		8267307128993C2700400FAA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8267307528993DB000400FAA /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		827635B8289A7943009D1B77 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 			children = (
 				8267307128993C2700400FAA /* HomeView.swift */,
 				827C9FBA28996AFF0009FD32 /* CoinRowView.swift */,
+				823408D928C7607D00CDE497 /* HomeStatsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +122,7 @@
 				82E63356289A97C1004E4E42 /* CoinImage */,
 				8267307428993D8E00400FAA /* CircleButton */,
 				82D7E74B28BE1663005A6999 /* SearchBarView.swift */,
+				823408D728C7576B00CDE497 /* StatisticView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 			children = (
 				82E2021D289A68FC0023C99A /* CoinDataService.swift */,
 				82E63359289AAF35004E4E42 /* CoinImageService.swift */,
+				823408DB28C770ED00CDE497 /* MarketDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -294,6 +303,7 @@
 				82C1A88C289928AB00ADF58A /* ContentView.swift in Sources */,
 				8267307228993C2700400FAA /* HomeView.swift in Sources */,
 				82E2021E289A68FC0023C99A /* CoinDataService.swift in Sources */,
+				823408DC28C770ED00CDE497 /* MarketDataService.swift in Sources */,
 				82E63358289A97F6004E4E42 /* CoinImageView.swift in Sources */,
 				82C1A88A289928AB00ADF58A /* SwiftCryptoTrackerApp.swift in Sources */,
 				8267307628993DB000400FAA /* CircleButtonView.swift in Sources */,
@@ -303,8 +313,10 @@
 				827635B9289A7944009D1B77 /* NetworkManager.swift in Sources */,
 				82E6335A289AAF35004E4E42 /* CoinImageService.swift in Sources */,
 				827C9FB928994EE20009FD32 /* CoinDetailModel.swift in Sources */,
+				823408D828C7576B00CDE497 /* StatisticView.swift in Sources */,
 				827C9FAD2899499E0009FD32 /* CircleButtonAnimationView.swift in Sources */,
 				82E6335C289AB321004E4E42 /* CoinImageViewModel.swift in Sources */,
+				823408DA28C7607D00CDE497 /* HomeStatsView.swift in Sources */,
 				827C9FB528994EE20009FD32 /* CoinModel.swift in Sources */,
 				827C9FB628994EE20009FD32 /* MarketDataModel.swift in Sources */,
 				82D7E74C28BE1663005A6999 /* SearchBarView.swift in Sources */,
