@@ -1,2 +1,10 @@
 # SwiftCryptoTracker
-<img width="375" alt="Captura de Pantalla 2022-08-31 a las 9 40 59" src="https://user-images.githubusercontent.com/77725497/187621324-775ccece-83df-497a-b76f-41ea9f5e47e0.png">
+A Crypto Tracker with Live Prices Tracker and a personal portfolio.  Using 100% SwifUI. Architecture MVVM with Combine.
+
+
+https://user-images.githubusercontent.com/77725497/190101338-f0ebcaa2-ce97-4397-84c1-f5b6bee510a1.mov
+
+
+
+https://user-images.githubusercontent.com/77725497/190101587-7ea13b13-2275-4642-bbf2-50ff71a418fa.mov
+
