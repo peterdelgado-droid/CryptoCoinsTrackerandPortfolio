@@ -75,7 +75,7 @@ extension CoinRowView {
 
 	}
 
-
+//this needs to be optimized
 	private var rightColumn: some View{
 
 		VStack{
