@@ -13,9 +13,11 @@ struct StatisticView: View {
 
     var body: some View {
 		VStack(alignment: .leading, spacing: 4){
-			
 			Text(stat.title)
 				.font(.caption)
+				.foregroundColor(Color.theme.secondaryText)
+			Text(stat.value)
+				.font(.headline)
 				.foregroundColor(Color.theme.accent)
 			HStack(spacing: 4){
 				Image(systemName: "triangle.fill")

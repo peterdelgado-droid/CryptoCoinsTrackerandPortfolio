@@ -15,12 +15,10 @@ import Combine
 
 class HomeViewModel: ObservableObject {
 
-	@Published var statistics: [StatisticModel] = [
-
-	]
+	@Published var statistics: [StatisticModel] = []
 
    //view model allCoins
-	@Published var allCoins: [CoinModel] = []
+	@Published var VMallCoins: [CoinModel] = []
 	@Published var portfolioCoins: [CoinModel] = []
 
 
@@ -49,8 +47,8 @@ class HomeViewModel: ObservableObject {
 
 				let marketCap = StatisticModel(title: "Market Cap", value: data.marketCap, percentageChange:
 												data.marketCapChangePercentage24HUsd)
-				let volume = StatisticModel(title: "24h Volume", value: data.volume)
-				let btcDominance = StatisticModel(title: "BTC Dominance", value: data.btcDominance)
+				let volume = StatisticModel(title: "24h Volume", value: data.volume, percentageChange: 5 )
+				let btcDominance = StatisticModel(title: "BTC Dominance", value: data.btcDominance, percentageChange: 8)
 				let portfolio = StatisticModel(title: "Portfolio Value", value: "$0.00", percentageChange:0 )
 
 
@@ -71,7 +69,7 @@ class HomeViewModel: ObservableObject {
 
 		dataService.$allCoins
 			.sink { [weak self] (returnedCoins) in
-				self?.allCoins = returnedCoins
+				self?.VMallCoins = returnedCoins
 			}
 			.store(in: &cancellables)
 		
@@ -95,7 +93,7 @@ class HomeViewModel: ObservableObject {
 			}
 		
 			.sink { [weak self] (returnedCoins) in
-				self?.allCoins = returnedCoins
+				self?.VMallCoins = returnedCoins
 			}
 			.store(in: &cancellables)
 	}
