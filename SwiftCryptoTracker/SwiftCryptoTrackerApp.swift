@@ -17,7 +17,7 @@ struct SwiftCryptoTrackerApp: App {
         WindowGroup {
 			NavigationView{
 				HomeView()
-					.hidden()
+					//.hidden()
 
 			}
 		.environmentObject(vm)
