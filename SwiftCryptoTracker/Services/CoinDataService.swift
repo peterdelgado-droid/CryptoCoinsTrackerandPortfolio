@@ -11,12 +11,10 @@ import Combine
 class CoinDataService{
 
 	@Published var allCoins: [CoinModel] = []
-
 	var coinSubscription: AnyCancellable?
 
 	init(){
 		getCoins()
-
 	}
 
 	private func getCoins(){
