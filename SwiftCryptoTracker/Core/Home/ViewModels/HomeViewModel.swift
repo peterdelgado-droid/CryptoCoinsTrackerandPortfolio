@@ -29,13 +29,11 @@ class HomeViewModel: ObservableObject {
 	private var cancellables = Set<AnyCancellable>()
 
 	init(){
-
 		addSubsribers()
-}
+	}
 
 
 	func addSubsribers(){
-
 		marKetdataService.$marketData
 			.map { (marketDataModel) -> [StatisticModel] in
 				var stats: [StatisticModel] = []

@@ -36,14 +36,5 @@ class CoinImageService{
 				self?.image = returnedImage
 				self?.imageSubscription?.cancel()
 			})
-
-
-
-
-	}
-
-
-
-
-
+		}
 }

@@ -53,27 +53,15 @@ struct PortfolioView: View {
 
 			}
 			.navigationTitle("Edit Portfolio")
-
-
-
 			.navigationBarItems(leading: Button(action: {
 				presentationMode.wrappedValue.dismiss()
 			}, label: {
 				Image(systemName: "xmark")
 					.font(.headline)
 			}))
-			}
-
-
-			
-
-
-
-
-
-
 		}
-    }
+	}
+}
 
 struct PortfolioView_Previews: PreviewProvider {
     static var previews: some View {
@@ -96,22 +84,14 @@ extension PortfolioView {
 				Text("Save")
 			})
 			.opacity(
-				(selectedCoin != nil && selectedCoin?.currentHoldings != Double(quantityText)) ? 1.0 : 0.0
-
-
-			)
-
+				(selectedCoin != nil && selectedCoin?.currentHoldings != Double(quantityText)) ? 1.0 : 0.0)
 		}
-
-
 	}
 
 	private func saveButtonpressed(){
 
 		guard let coin = selectedCoin else {return}
-
 		//save to portfolio
-
 		//show checkmark
 		withAnimation(.easeIn){
 			showCheckmark = true
@@ -133,15 +113,8 @@ extension PortfolioView {
 						}
 						.background(
 							RoundedRectangle(cornerRadius : 10)
-								.stroke(selectedCoin?.id == coin.id ? Color.theme.green : Color.clear, lineWidth: 1)
-
-
-
-						)
-
+								.stroke(selectedCoin?.id == coin.id ? Color.theme.green : Color.clear, lineWidth: 1))
 				}
-
-
 			}
 			.padding(.vertical, 4)
 			.padding(.leading)
