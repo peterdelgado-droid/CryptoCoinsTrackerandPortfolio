@@ -43,17 +43,10 @@ struct HomeView: View {
 
 				}
 				Spacer(minLength: 0)
-
 			}
-
-
-			}
-
 		}
-
-
-
-    }
+	}
+}
 
 
 struct HomeView_Previews: PreviewProvider {
@@ -95,42 +88,27 @@ extension HomeView {
 						showPortfolio.toggle()
 					}
 				}
-		}
+			}
 		.padding(.horizontal)
-
-
-
-
 	}
 
 	private var allCoinsList: some View{
-
 		List{
 
 			ForEach(vm.VMallCoins){ coin in
 				CoinRowView(coin: coin, showHoldingColumn: false)
 					.listRowInsets(.init(top: 10, leading: 10, bottom: 10, trailing: 10))
-
-			}
-
-
-
-		}
+					}
+				}
 		.listStyle(PlainListStyle())
 	}
 
 	private var portfolioCoinsList: some View{
-
 		List{
-
 			ForEach(vm.portfolioCoins){ coin in
 				CoinRowView(coin: coin, showHoldingColumn: true)
 					.listRowInsets(.init(top: 10, leading: 10, bottom: 10, trailing: 10))
-
 			}
-
-
-
 		}
 		.listStyle(PlainListStyle())
 	}
@@ -147,5 +125,4 @@ extension HomeView {
 				.frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
 		}
 	}
-
 }
