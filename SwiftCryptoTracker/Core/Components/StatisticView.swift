@@ -32,16 +32,12 @@ struct StatisticView: View {
 			}
 			.foregroundColor((stat.percentageChange ?? 0) >= 0 ? Color.theme.green: Color.theme.red)
 			.opacity(stat.percentageChange == nil ? 0.0 : 1.0)
-
-
-
 		}
     }
 }
 
 struct StatisticView_Previews: PreviewProvider {
     static var previews: some View {
-
 		Group{
 			StatisticView(stat: dev.stat1)
 				.previewLayout(.sizeThatFits)
@@ -49,8 +45,6 @@ struct StatisticView_Previews: PreviewProvider {
 				.previewLayout(.sizeThatFits)
 			StatisticView(stat: dev.stat3)
 				.previewLayout(.sizeThatFits)
-
-
 		}
     }
 }

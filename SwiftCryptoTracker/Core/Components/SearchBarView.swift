@@ -30,10 +30,7 @@ var body: some View {
 						UIApplication.shared.keyWindow?.endEditing(true)
 						searchText = ""
 					}
-				,alignment: .trailing
-
-
-			)
+				,alignment: .trailing)
 	}
 	.font(.headline)
 	.padding()
@@ -45,6 +42,6 @@ var body: some View {
 
 			   ))
 	.padding()
-}
+	}
 }
 

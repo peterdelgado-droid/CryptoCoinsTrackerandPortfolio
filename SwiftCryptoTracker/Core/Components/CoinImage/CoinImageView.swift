@@ -17,7 +17,6 @@ struct CoinImageView: View {
 
 	init(coin:CoinModel){
 		_vm = StateObject(wrappedValue: CoinImageViewModel(coin:coin))
-
 	}
 
 

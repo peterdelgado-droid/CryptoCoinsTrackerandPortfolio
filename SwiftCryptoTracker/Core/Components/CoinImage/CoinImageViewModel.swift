@@ -22,7 +22,6 @@ class CoinImageViewModel: ObservableObject{
 		self.dataService = CoinImageService(coin:coin)
 		self.addSubscribers()
 		self.isLoading = true
-
 	}
 
 	private func addSubscribers(){
