@@ -22,6 +22,8 @@
 		827C9FBB28996AFF0009FD32 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827C9FBA28996AFF0009FD32 /* CoinRowView.swift */; };
 		827C9FBD28996BDE0009FD32 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827C9FBC28996BDE0009FD32 /* PreviewProvider.swift */; };
 		827C9FBF289972580009FD32 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827C9FBE289972580009FD32 /* Double.swift */; };
+		828DCEA52AB083E000937D2A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 828DCEA42AB083E000937D2A /* Launch Screen.storyboard */; };
+		828DCEA72AB0901B00937D2A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828DCEA62AB0901B00937D2A /* LaunchView.swift */; };
 		82BD573B28CF510F0059981E /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BD573A28CF510F0059981E /* CoinLogoView.swift */; };
 		82C1A88A289928AB00ADF58A /* SwiftCryptoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A889289928AB00ADF58A /* SwiftCryptoTrackerApp.swift */; };
 		82C1A88C289928AB00ADF58A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C1A88B289928AB00ADF58A /* ContentView.swift */; };
@@ -56,6 +58,9 @@
 		827C9FBA28996AFF0009FD32 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		827C9FBC28996BDE0009FD32 /* PreviewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		827C9FBE289972580009FD32 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		828DCEA12AB0786800937D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		828DCEA42AB083E000937D2A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		828DCEA62AB0901B00937D2A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		82BD573A28CF510F0059981E /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 		82C1A886289928AB00ADF58A /* SwiftCryptoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCryptoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C1A889289928AB00ADF58A /* SwiftCryptoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCryptoTrackerApp.swift; sourceTree = "<group>"; };
@@ -89,6 +94,7 @@
 		8267306D28993BE200400FAA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				828DCEA22AB083AE00937D2A /* Launch */,
 				82C1A8E12899310E00ADF58A /* Color.swift */,
 				8267307328993D6D00400FAA /* Components */,
 				8267306E28993BF400400FAA /* Home */,
@@ -166,6 +172,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		828DCEA22AB083AE00937D2A /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				828DCEA32AB083B800937D2A /* Views */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		828DCEA32AB083B800937D2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				828DCEA42AB083E000937D2A /* Launch Screen.storyboard */,
+				828DCEA62AB0901B00937D2A /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		82C1A87D289928AB00ADF58A = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +208,7 @@
 		82C1A888289928AB00ADF58A /* SwiftCryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				828DCEA12AB0786800937D2A /* Info.plist */,
 				82C1A889289928AB00ADF58A /* SwiftCryptoTrackerApp.swift */,
 				827635BA289A7AA9009D1B77 /* Utilities */,
 				82E2021C289A68D00023C99A /* Services */,
@@ -296,6 +320,7 @@
 			files = (
 				82C1A891289928AC00ADF58A /* Preview Assets.xcassets in Resources */,
 				82C1A8DE289930B000ADF58A /* Assets.xcassets in Resources */,
+				828DCEA52AB083E000937D2A /* Launch Screen.storyboard in Resources */,
 				82C1A8D828992E0D00ADF58A /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +346,7 @@
 				82C1A8E22899310E00ADF58A /* Color.swift in Sources */,
 				827C9FB728994EE20009FD32 /* PortfolioContainer.xcdatamodeld in Sources */,
 				827635B9289A7944009D1B77 /* NetworkManager.swift in Sources */,
+				828DCEA72AB0901B00937D2A /* LaunchView.swift in Sources */,
 				82E6335A289AAF35004E4E42 /* CoinImageService.swift in Sources */,
 				82FC185128C8A987009C3908 /* XMarkButton.swift in Sources */,
 				827C9FB928994EE20009FD32 /* CoinDetailModel.swift in Sources */,
@@ -465,10 +491,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftCryptoTracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftCryptoTracker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,10 +524,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftCryptoTracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftCryptoTracker/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -13,10 +13,13 @@ struct SwiftCryptoTrackerApp: App {
   @StateObject private var vm = HomeViewModel()
 	var body: some Scene {
         WindowGroup {
-			NavigationView{
-				HomeView()
-					//.hidden()
+			ZStack{
+				NavigationView{
+					HomeView()
+				}
+				LaunchView()
 			}
+
 		.environmentObject(vm)
         }
     }
