@@ -15,7 +15,7 @@ struct CoinLogoView: View {
 				.frame(width: 50, height: 50)
 			Text(coin.symbol.uppercased())
 				.font(.headline)
-				.foregroundColor(Color.theme.accent)
+				.foregroundColor(Color.Launchtheme.accent)
 				.lineLimit(1)
 				.minimumScaleFactor(0.5)
 			Text(coin.name)

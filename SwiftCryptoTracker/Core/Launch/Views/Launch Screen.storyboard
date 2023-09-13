@@ -31,16 +31,7 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qi4-Zc-2uz">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-transparent" translatesAutoresizingMaskIntoConstraints="NO" id="BNX-q9-hRD">
-                                        <rect key="frame" x="146.66666666666666" y="163" width="100" height="100"/>
-                                    </imageView>
-                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="BNX-q9-hRD" firstAttribute="top" secondItem="Qi4-Zc-2uz" secondAttribute="top" constant="163" id="UI1-3s-el7"/>
-                                    <constraint firstItem="BNX-q9-hRD" firstAttribute="centerX" secondItem="Qi4-Zc-2uz" secondAttribute="centerX" id="WDB-N3-95K"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
@@ -65,7 +56,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo-transparent" width="100" height="100"/>
         <namedColor name="LaunchBackgroundColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

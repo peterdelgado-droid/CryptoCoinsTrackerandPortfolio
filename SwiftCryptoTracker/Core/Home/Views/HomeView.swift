@@ -16,7 +16,7 @@ struct HomeView: View {
     var body: some View {
 
 		ZStack{
-			Color.theme.background
+			Color.Launchtheme.background
 				.ignoresSafeArea()
 				.sheet(isPresented: $showPorfolioView, content: {
 					PortfolioView()
@@ -78,7 +78,7 @@ extension HomeView {
 			Text(showPortfolio ? "Portfolio" : "Live Prices")
 				.font(.headline)
 				.fontWeight(.heavy)
-				.foregroundColor(Color.theme.accent)
+				.foregroundColor(Color.Launchtheme.accent)
 				.animation(.none)
 			Spacer()
 			CircleButtonView(iconName: "chevron.right")
@@ -88,7 +88,7 @@ extension HomeView {
 						showPortfolio.toggle()
 					}
 				}
-			}
+		}
 		.padding(.horizontal)
 	}
 
@@ -97,8 +97,8 @@ extension HomeView {
 			ForEach(vm.VMallCoins){ coin in
 				CoinRowView(coin: coin, showHoldingColumn: false)
 					.listRowInsets(.init(top: 10, leading: 10, bottom: 10, trailing: 10))
-					}
-		}.listRowBackground(Color.red)
+					}.listRowBackground(Color.Launchtheme.background)
+		}
 		.listStyle(PlainListStyle())
 	}
 
