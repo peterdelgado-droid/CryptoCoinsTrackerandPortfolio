@@ -33,13 +33,13 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-transparent" translatesAutoresizingMaskIntoConstraints="NO" id="BNX-q9-hRD">
-                                        <rect key="frame" x="146.66666666666666" y="329.66666666666669" width="100" height="100"/>
+                                        <rect key="frame" x="146.66666666666666" y="163" width="100" height="100"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="BNX-q9-hRD" firstAttribute="centerX" secondItem="Qi4-Zc-2uz" secondAttribute="centerX" id="f0k-BP-cgi"/>
-                                    <constraint firstItem="BNX-q9-hRD" firstAttribute="centerY" secondItem="Qi4-Zc-2uz" secondAttribute="centerY" id="jr0-gX-POX"/>
+                                    <constraint firstItem="BNX-q9-hRD" firstAttribute="top" secondItem="Qi4-Zc-2uz" secondAttribute="top" constant="163" id="UI1-3s-el7"/>
+                                    <constraint firstItem="BNX-q9-hRD" firstAttribute="centerX" secondItem="Qi4-Zc-2uz" secondAttribute="centerX" id="WDB-N3-95K"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -50,12 +50,12 @@
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="Qi4-Zc-2uz" secondAttribute="trailing" id="HzO-qp-a8d"/>
                             <constraint firstItem="Qi4-Zc-2uz" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="Jfw-IO-b0T"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Q3B-4B-g5h"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
                             <constraint firstItem="Qi4-Zc-2uz" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="lNy-5D-82a"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="1/3" constant="1" id="moa-c2-u7t"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="Qi4-Zc-2uz" secondAttribute="bottom" id="p7s-dd-FkZ"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="x7j-FC-K8j"/>
+                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="x7j-FC-K8j"/>
                         </constraints>
                     </view>
                 </viewController>

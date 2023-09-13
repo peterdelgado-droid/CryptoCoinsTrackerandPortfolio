@@ -94,12 +94,11 @@ extension HomeView {
 
 	private var allCoinsList: some View{
 		List{
-
 			ForEach(vm.VMallCoins){ coin in
 				CoinRowView(coin: coin, showHoldingColumn: false)
 					.listRowInsets(.init(top: 10, leading: 10, bottom: 10, trailing: 10))
 					}
-				}
+		}.listRowBackground(Color.red)
 		.listStyle(PlainListStyle())
 	}
 

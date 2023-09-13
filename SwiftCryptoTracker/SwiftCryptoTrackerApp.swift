@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct SwiftCryptoTrackerApp: App {
 
+  @State private var showLaunchView: Bool = true
+
   @StateObject private var vm = HomeViewModel()
 	var body: some Scene {
         WindowGroup {
@@ -17,7 +19,16 @@ struct SwiftCryptoTrackerApp: App {
 				NavigationView{
 					HomeView()
 				}
-				LaunchView()
+
+				ZStack{
+					if showLaunchView{
+						LaunchView(showLaunchView: $showLaunchView)
+							.transition(.move(edge: .leading))
+					}
+
+				}
+				.zIndex(2.0)
+
 			}
 
 		.environmentObject(vm)
