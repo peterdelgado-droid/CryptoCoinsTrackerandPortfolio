@@ -26,6 +26,7 @@ struct PortfolioView: View {
 					if selectedCoin != nil {
 						VStack(spacing: 20){
 							HStack{
+
 								Text("Current price of\(selectedCoin?.symbol.uppercased() ?? ""):")
 								Spacer()
 								Text(selectedCoin?.currentPrice.asCurrencyWith2Decimals() ?? "")
@@ -37,27 +38,29 @@ struct PortfolioView: View {
 								TextField("Ex: 1.4", text: $quantityText)
 									.multilineTextAlignment(.trailing)
 									.keyboardType(.decimalPad)
-							}
+							}.foregroundColor(Color.Launchtheme.accent)
 							HStack{
 								Text("Current Value:")
+									.foregroundColor(Color.Launchtheme.accent)
 								Spacer()
-
 								Text(getCurrentValue().asCurrencyWith2Decimals())
+
 							}
 						}
 						.animation(.none)
 						.padding()
 						.font(.headline)
 					}
-				}
+				}.foregroundColor(Color.Launchtheme.accent)
 
-			}
+			}.background(Color.Launchtheme.background)
 			.navigationTitle("Edit Portfolio")
 			.navigationBarItems(leading: Button(action: {
 				presentationMode.wrappedValue.dismiss()
 			}, label: {
 				Image(systemName: "xmark")
 					.font(.headline)
+					.foregroundColor(Color.Launchtheme.accent)
 			}))
 		}
 	}
