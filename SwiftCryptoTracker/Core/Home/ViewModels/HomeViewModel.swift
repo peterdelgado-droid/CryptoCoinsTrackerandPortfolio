@@ -31,6 +31,7 @@ class HomeViewModel: ObservableObject {
 
 
 	func addSubsribers(){
+		//updates marketData
 		marKetdataService.$marketData
 			.map { (marketDataModel) -> [StatisticModel] in
 				var stats: [StatisticModel] = []
@@ -60,6 +61,7 @@ class HomeViewModel: ObservableObject {
 				self?.VMallCoins = returnedCoins
 			}
 			.store(in: &cancellables)
+		//updates portfolioCoins
 		$searchText.combineLatest(dataService.$allCoins)
 			.map{ (text, startingCoins) -> [CoinModel] in
 				
