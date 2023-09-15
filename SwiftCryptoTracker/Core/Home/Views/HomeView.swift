@@ -14,7 +14,7 @@ struct HomeView: View {
 	@State private var showPorfolioView: Bool = false// new sheet
 
 	@State private var selectedCoin: CoinModel? = nil
-	@State private var showdetaildView: Bool = false
+	@State private var showDetailView: Bool = false
 
     var body: some View {
 
@@ -50,8 +50,8 @@ struct HomeView: View {
 		}
 		.background(
 			NavigationLink(
-				destination: DetailView(coin:$selectedCoin),
-				isActive: $showdetaildView,
+				destination: DetailLoadingView(coin: $selectedCoin),
+				isActive: $showDetailView,
 				label: {
 					EmptyView()
 				})
@@ -117,7 +117,8 @@ extension HomeView {
 	}
 
 	private func segue(coin: CoinModel){
-
+		selectedCoin = coin
+		showDetailView.toggle()
 	}
 
 	private var portfolioCoinsList: some View{
