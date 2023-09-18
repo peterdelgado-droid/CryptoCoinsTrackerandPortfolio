@@ -13,7 +13,6 @@ struct DetailLoadingView: View{
 
 	var body: some View {
 		ZStack{
-			
 			if let coin = coin{
 				DetailView(coin: coin)
 			}
@@ -26,7 +25,11 @@ struct DetailLoadingView: View{
 struct DetailView: View {
 
 	@StateObject var vm: DetailViewModel
-
+	private let columns: [GridItem] = [
+		GridItem(.flexible()),
+		GridItem(.flexible())
+	]
+	private let spacing: CGFloat = 30
 	
 	
 	init(coin: CoinModel) {
@@ -34,16 +37,59 @@ struct DetailView: View {
 		print("Initializing Detail View for\(coin.name)")
 	}
     var body: some View {
-		ZStack{
-			Text("hello")
-		}
+		ScrollView{
+			VStack(spacing: 20){
+				Text("hi")
+					.frame(height: 150)
 
+				Text("Overview")
+					.font(.title)
+					.bold()
+					.foregroundColor(Color.Launchtheme.accent)
+					.frame(maxWidth: .infinity, alignment: .leading)
+				Divider()
+
+
+				LazyVGrid(
+					columns: columns,
+					alignment: .center,
+					spacing: spacing,
+					pinnedViews: [],
+					content:{
+						ForEach(vm.overviewStatistics) { stat in
+							StatisticView(stat:stat)
+						}
+					})
+
+				Text("Additional Details")
+					.font(.title)
+					.bold()
+					.foregroundColor(Color.Launchtheme.accent)
+					.frame(maxWidth: .infinity, alignment: .leading)
+				Divider()
+
+				LazyVGrid(
+					columns: columns,
+					alignment: .center,
+					spacing: spacing,
+					pinnedViews: [],
+					content:{
+						ForEach(vm.additionalStatistics) { stat in
+							StatisticView(stat: stat)
+						}
+					})
+			}
+			.padding()
+		}
+		.navigationTitle(vm.coin.name)
 	}
 
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-		DetailView(coin: dev.coin)
+		NavigationView{
+			DetailView(coin: dev.coin)
+		}
     }
 }
