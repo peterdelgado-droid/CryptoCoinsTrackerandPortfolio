@@ -35,7 +35,8 @@ struct ChartView: View {
 			chartView
 				.frame(height: 200)
 				.background(chartBackground)
-				.overlay(chartYAxis, alignment: .leading)
+				.overlay(chartYAxis.padding(.vertical, -10)
+						 , alignment: .leading)
 
 			HStack{
 				Text(startingDate.asShortDateString())

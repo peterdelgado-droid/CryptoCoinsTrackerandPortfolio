@@ -16,6 +16,7 @@ struct PortfolioView: View {
 	@State private var quantityText: String = ""
 	@State private var showCheckmark: Bool = false
 
+
 	var body: some View {
 		NavigationView{
 			ScrollView{
@@ -62,6 +63,24 @@ struct PortfolioView: View {
 					.font(.headline)
 					.foregroundColor(Color.Launchtheme.accent)
 			}))
+			.toolbar(content: {
+				ToolbarItem(placement: .navigationBarTrailing) {
+					HStack(spacing: 10){
+							Image(systemName: "checkmark")
+							.foregroundColor(Color.Launchtheme.accent)
+							.opacity(showCheckmark ? 1.0: 0.0)
+
+						Button(action: {
+							saveButtonpressed()
+							}, label: {
+						Text("Save".uppercased())
+						.foregroundColor(Color.Launchtheme.accent)
+						})
+						.opacity(
+							(selectedCoin != nil && selectedCoin?.currentHoldings != Double(quantityText)) ? 1.0 : 0.0
+						)}
+				}
+			})
 		}
 	}
 }
@@ -95,10 +114,24 @@ extension PortfolioView {
 
 		guard let coin = selectedCoin else {return}
 		//save to portfolio
+
 		//show checkmark
 		withAnimation(.easeIn){
 			showCheckmark = true
+			removeSelectedCoin()
 		}
+
+		//hide checkmark
+		DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+			withAnimation(.easeOut){
+				showCheckmark = false
+			}
+		}
+	}
+
+	private func removeSelectedCoin() {
+		selectedCoin = nil
+		vm.searchText = ""
 	}
 
 	private var coinLogoList: some View{
