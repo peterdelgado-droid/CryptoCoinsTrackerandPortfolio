@@ -44,10 +44,11 @@ struct DetailView: View {
 			ScrollView{
 
 				VStack(spacing: 20){
-					//Color.Launchtheme.background
 					Text("\(vm.coin.name)")
-						.frame(height: 150)
+						.frame(height: 1)
 						.foregroundColor(Color.Launchtheme.accent)
+					ChartView(coin: vm.coin)
+
 
 					Text("Overview")
 						.font(.title)
