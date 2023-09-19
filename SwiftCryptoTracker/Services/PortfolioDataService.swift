@@ -12,7 +12,7 @@ class PortfolioDataService{
 
 	private let container: NSPersistentContainer
 	private let containerName: String = "PortfolioContainer"
-	private let entityName: String = "PortfolioEntiy"
+	private let entityName: String = "PortfolioEntity"
 
 	@Published var savedEntities: [PortfolioEntity] = []
 
@@ -51,7 +51,7 @@ class PortfolioDataService{
 	private func getPortfolio() {
 		let request = NSFetchRequest<PortfolioEntity>(entityName: entityName)
 		do {
-			try container.viewContext.fetch(request)
+			savedEntities = try container.viewContext.fetch(request)
 		} catch let error {
 			print("Error fetching Portfolio Entities.\(error)")
 		}
