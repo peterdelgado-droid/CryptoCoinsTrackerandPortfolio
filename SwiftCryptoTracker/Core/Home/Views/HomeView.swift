@@ -129,7 +129,7 @@ extension HomeView {
 					.onTapGesture {
 						segue(coin: coin)
 					}
-			}
+			}.listRowBackground(Color.Launchtheme.background)
 		}
 		.listStyle(PlainListStyle())
 	}

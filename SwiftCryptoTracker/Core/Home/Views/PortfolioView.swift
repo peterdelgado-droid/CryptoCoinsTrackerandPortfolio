@@ -34,11 +34,13 @@ struct PortfolioView: View {
 							}
 							Divider()
 							HStack{
-								Text("Amount in your portfolio")
+								Text("Edit Amount in your portfolio")
 								Spacer()
 								TextField("Ex: 1.4", text: $quantityText)
 									.multilineTextAlignment(.trailing)
+									.frame(maxWidth: .infinity, alignment: .trailing)
 									.keyboardType(.decimalPad)
+									.padding(10)
 							}.foregroundColor(Color.Launchtheme.accent)
 							HStack{
 								Text("Current Value:")

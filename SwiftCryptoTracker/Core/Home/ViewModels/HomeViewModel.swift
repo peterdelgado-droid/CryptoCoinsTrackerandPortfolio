@@ -8,10 +8,6 @@
 import Foundation
 import Combine
 
-//StatisticModel(title: "Title", value: "Value", percentageChange: 1),
-//StatisticModel(title: "Title", value: "Value"),
-//StatisticModel(title: "Title", value: "Value"),
-//StatisticModel(title: "Title", value: "Value", percentageChange: -7),
 
 class HomeViewModel: ObservableObject {
 
