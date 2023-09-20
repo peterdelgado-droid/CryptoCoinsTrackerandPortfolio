@@ -6,6 +6,8 @@ A Crypto Tracker with Live Prices Tracker and an editable Personal Portfolio of 
 
 -CoreData
 
+-Unit Tests
+
 
 Live Crypto Currencies Prices:
 
