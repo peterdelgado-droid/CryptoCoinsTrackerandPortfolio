@@ -7,9 +7,14 @@ A Crypto Tracker with Live Prices Tracker and an editable Personal Portfolio of 
 -CoreData
 
 
-https://user-images.githubusercontent.com/77725497/190101338-f0ebcaa2-ce97-4397-84c1-f5b6bee510a1.mov
+Live Crypto Currencies Prices:
+
+https://github.com/peterdelgado-droid/SwiftCryptoTracker/assets/77725497/6f516232-29d9-4b23-9d2b-767c7b78b3bf
+
+
+View and Edit Portfolio:
 
 
 
-https://user-images.githubusercontent.com/77725497/190101587-7ea13b13-2275-4642-bbf2-50ff71a418fa.mov
+https://github.com/peterdelgado-droid/SwiftCryptoTracker/assets/77725497/01c525d5-8e33-4522-8786-895332cf65ac
 
