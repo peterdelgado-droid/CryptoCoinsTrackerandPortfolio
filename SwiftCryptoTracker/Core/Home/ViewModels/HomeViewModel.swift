@@ -22,9 +22,15 @@ class HomeViewModel: ObservableObject {
 	private var cancellables = Set<AnyCancellable>()
 	private let portfolioDataService = PortfolioDataService()
 
+
+
+
+
 	init(){
 		addSubsribers()
+		
 	}
+
 
 
 	func addSubsribers(){
@@ -90,18 +96,54 @@ class HomeViewModel: ObservableObject {
 						return coin.updateHoldings(amount: entity.amount)
 
 					}
-				}
+			}
 			.sink{ [weak self] (returnedCoins) in
 				self?.portfolioCoins = returnedCoins
 			}
 			.store(in: &cancellables)
-		}
+
+	}
 
 	func updatePortfolio(coin: CoinModel, amount: Double){
 		portfolioDataService.updatePortfolio(coin: coin, amount: amount)
 	}
 
 
-	
+	func backwardsPrime(start: Int, end: Int) -> [Int] {
+		var result: [Int] = []
+
+		func isPrime(_ number: Int) -> Bool {
+			if number < 2 {
+				return false
+			}
+
+			for i in 2..<Int(sqrt(Double(number))) + 1 {
+				if number % i == 0 {
+					return false
+				}
+			}
+
+			return true
+		}
+
+		for num in start...end {
+			let reversedNum = Int(String(String(num).reversed()))!
+
+			if num != reversedNum && isPrime(num) && isPrime(reversedNum) {
+				result.append(num)
+			}
+		}
+
+		return result
+	}
+
+
+
+	// Example usage:
+
+
+
+
+
 
 	}
