@@ -1,4 +1,4 @@
-# SwiftUICryptoTracker
+# Crypto Coins Tracker and Portfolio
 A Crypto Tracker with Live Prices Tracker and an editable Personal Portfolio of your current Crypto Holdings.  
 -Using 100% SwiftUI. 
 
